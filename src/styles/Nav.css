@@ -1,0 +1,9 @@
+.Nav-links {
+    color:rgb(158, 123, 48);
+    font-size: 1.5rem;
+  }
+  
+  .Nav-links a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
