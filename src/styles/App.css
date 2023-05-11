@@ -2,12 +2,19 @@
   text-align: center;
 }
 .App-header {
-  background-color: #ecebeb;
+  background-color: #fcfcfc;
   min-height: 10rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: rgb(2, 2, 2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.App-header button{
+  margin-left: 10px;
+  margin-right: 10px;
 }

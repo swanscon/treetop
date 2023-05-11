@@ -1,6 +1,6 @@
 function Blog(){
     return (
-        <div className="home-page">
+        <div className="App">
             <h1>Recent Blog Posts</h1>
             <p>Check it out!</p>
         </div>

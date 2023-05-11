@@ -1,0 +1,37 @@
+.content {
+    margin-top: 14rem;
+}
+
+.content .top-img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.content h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content button {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

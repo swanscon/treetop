@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import './styles/App.css';
 import './styles/Nav.css';
+import './styles/Component.css'
 import Home from './components/Home';
 import About from './components/About';
 import Quote from './components/Quote';
@@ -14,47 +15,31 @@ import Blog from './components/Blog';
 import Events from './components/Events';
 import Contact from './components/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Treetop Insurance</h1>
-          {/* <nav className="navbar">
-            <button className="navbar-toggler" type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarToggle">
-              <span className="navbar-toggler-icon"></span>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </button>
-            <div className="collapse" id="navbarToggle">
-              <Link to="/" className="dropdown-item">Home</Link>
-              <Link to="/about" className="dropdown-item">About</Link>
-              <Link to="/quote" className="dropdown-item">Request Quote</Link>
-              <Link to="/insurance" className="dropdown-item">Insurance Solutions</Link>
-              <Link to="/blog" className="dropdown-item">Blog</Link>
-              <Link to="/events" className="dropdown-item">Events</Link>
-              <Link to="/contact" className="dropdown-item">Contact</Link>
-            </div>          
-          </nav> */}
-                <nav class="navbar navbar-expand-md Nav-links">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                  <div class="collapse navbar-collapse" id="navbarToggler">
-
-                  <Link to="/" className="dropdown-item">Home</Link>
-                  <Link to="/about" className="dropdown-item">About</Link>
-                  <Link to="/quote" className="dropdown-item">Request Quote</Link>
-                  <Link to="/insurance" className="dropdown-item">Insurance Solutions</Link>
-                  <Link to="/blog" className="dropdown-item">Blog</Link>
-                  <Link to="/events" className="dropdown-item">Events</Link>
-                  <Link to="/contact" className="dropdown-item">Contact</Link>
-                  </div>
-              </div>
-          </nav>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><Link to="/" className="dropdown-item nav-links">Home</Link></li>
+              <li><Link to="/about" className="dropdown-item nav-links">About</Link></li>
+              <li><Link to="/quote" className="dropdown-item nav-links">Request Quote</Link></li>
+              <li><Link to="/insurance" className="dropdown-item nav-links">Insurance Solutions</Link></li>
+              <li><Link to="/blog" className="dropdown-item nav-links">Blog</Link></li>
+              <li><Link to="/events" className="dropdown-item nav-links">Events</Link></li>
+              <li><Link to="/contact" className="dropdown-item nav-links">Contact</Link></li>
+            </ul>
+          </div>
+          <h1>Treetop Insurance</h1>
+          <button class="btn btn-light" type="button">
+              <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
+          </button>
         </header>
       </div>
 

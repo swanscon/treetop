@@ -1,6 +1,6 @@
 function Contact(){
     return (
-        <div className="home-page">
+        <div className="App">
             <h1>Contact us!</h1>
             <p>Check it out!</p>
         </div>
