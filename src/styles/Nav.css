@@ -4,12 +4,14 @@
   margin-left: 10px;
   margin-right: 10px; 
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-links:hover {
   color:rgb(12, 56, 25)
 }
 
-/* .nav-links:active {
-  color:rgb(18, 82, 37);
-} */
+#header-nav a.active {
+  color:rgb(80, 104, 54);
+}

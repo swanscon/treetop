@@ -2,7 +2,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom';
 import './styles/App.css';
 import './styles/Nav.css';
@@ -31,33 +32,33 @@ function App() {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="header-nav">
                   <li className="nav-item">
-                    <Link to="/" className="nav-links">Home</Link>
+                    <NavLink to="/" className="nav-links">Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/about" className="nav-links">About</Link>
+                    <NavLink to="/about" className="nav-links">About</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/quote" className="nav-links">Request Quote</Link>
+                    <NavLink to="/quote" className="nav-links">Request Quote</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/insurance" className="nav-links">Insurance Solutions</Link>
+                    <NavLink to="/insurance" className="nav-links">Insurance Solutions</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/blog" className="nav-links">Blog</Link>
+                    <NavLink to="/blog" className="nav-links">Blog</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/events" className="nav-links">Events</Link>
+                    <NavLink to="/events" className="nav-links">Events</NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/contact" className="nav-links">Contact</Link>
+                    <NavLink to="/contact" className="nav-links">Contact</NavLink>
                   </li>
                 </ul>
-                <form className="d-flex">
+                {/* <form className="d-flex">
                   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                   <button className="btn btn-outline-success" type="submit"><FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon></button>
-                </form>
+                </form> */}
               </div>
             </div>
           </nav>
