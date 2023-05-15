@@ -7,6 +7,7 @@ import {
 import './styles/App.css';
 import './styles/Nav.css';
 import './styles/Component.css'
+import './styles/Images.css'
 import Home from './components/Home';
 import About from './components/About';
 import Quote from './components/Quote';
@@ -16,30 +17,50 @@ import Events from './components/Events';
 import Contact from './components/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import Logo from './assets/images/tree-top-insurance.png';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><Link to="/" className="dropdown-item nav-links">Home</Link></li>
-              <li><Link to="/about" className="dropdown-item nav-links">About</Link></li>
-              <li><Link to="/quote" className="dropdown-item nav-links">Request Quote</Link></li>
-              <li><Link to="/insurance" className="dropdown-item nav-links">Insurance Solutions</Link></li>
-              <li><Link to="/blog" className="dropdown-item nav-links">Blog</Link></li>
-              <li><Link to="/events" className="dropdown-item nav-links">Events</Link></li>
-              <li><Link to="/contact" className="dropdown-item nav-links">Contact</Link></li>
-            </ul>
-          </div>
-          <h1>Treetop Insurance</h1>
-          <button class="btn btn-light" type="button">
-              <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
-          </button>
+          <img src={Logo} className="header-logo"/>
+          <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container-fluid">
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li className="nav-item">
+                    <Link to="/" className="nav-links">Home</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/about" className="nav-links">About</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/quote" className="nav-links">Request Quote</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/insurance" className="nav-links">Insurance Solutions</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/blog" className="nav-links">Blog</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/events" className="nav-links">Events</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/contact" className="nav-links">Contact</Link>
+                  </li>
+                </ul>
+                <form className="d-flex">
+                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button className="btn btn-outline-success" type="submit"><FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon></button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </header>
       </div>
 

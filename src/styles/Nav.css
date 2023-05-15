@@ -1,9 +1,15 @@
 .nav-links {
-    color:rgb(158, 123, 48);
-    font-size: 1.3rem;
-  }
-  
-.nav-links li {
-margin-left: 10px;
-margin-right: 10px;
+  color:rgb(158, 123, 48);
+  font-size: 1.3rem;
+  margin-left: 10px;
+  margin-right: 10px; 
+  text-decoration: none;
 }
+
+.nav-links:hover {
+  color:rgb(12, 56, 25)
+}
+
+/* .nav-links:active {
+  color:rgb(18, 82, 37);
+} */
