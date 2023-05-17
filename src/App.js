@@ -18,6 +18,7 @@ import Events from './components/Events';
 import Contact from './components/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import Logo from './assets/images/tree-top-insurance.png';
 
 function App() {
@@ -81,26 +82,26 @@ function App() {
       <footer className="App-footer">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
+            <div className="footer-col">
               <div class="logo">
-                <h3>Tree Top Insurance</h3>
-                  <p>
-                      As a full service Insurance Provider, Tree Top Insurance provides the insurance products you need. From standard home, health and auto insurance to business, health and long term care insurance, we offer a range of solutions for you at any stage of life.
-                  </p>
+                <img src={Logo} className="footer-logo"/>
+                <p>
+                    As a full service Insurance Provider, Tree Top Insurance provides the insurance products you need. From standard home, health and auto insurance to business, health and long term care insurance, we offer a range of solutions for you at any stage of life.
+                </p>
               </div>
                 <ul>
                   <li>
                     <a href="https://www.facebook.com/1175641719286949" target="_blank" title="Tree Top Insurance - Facebook Page">
-                      <i class="fab fa-facebook-f"></i>
+                      <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                     </a>
                   </li>  
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-footer-widget">
-                <h3>Quick Links</h3>
-                <ul class="footer-quick-links">
+              <div className="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
                   <li>
                     <a href="/" title="Tree Top Insurance - Personal, Business, Health and Medicare Coverage in Minnesota and Wisconsin">
                         Home
@@ -131,41 +132,41 @@ function App() {
                           Scope of Appointment Form
                       </a>
                     </li>
-                  <li>                                    
-                        <a href="/quote" title="Tree Top Insurance - Get A Quote">
-                            Get A Quote
-                        </a>                                   
-                  </li>
-                      <li>
-                        <a href="/contact" title="Tree Top Insurance - Contact Us">
-                            Contact Us
-                        </a>
-                      </li>
+                    <li>                                    
+                      <a href="/quote" title="Tree Top Insurance - Get A Quote">
+                          Get A Quote
+                      </a>                                   
+                    </li>
+                    <li>
+                      <a href="/contact" title="Tree Top Insurance - Contact Us">
+                          Contact Us
+                      </a>
+                    </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-sm-3 offset-md-3">
-                <div class="single-footer-widget">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-contact-info">
-                                <li>
-                                    <span>Location:</span>
-                                    1382 Maplewood Dr, Long Lake, Minnesota 55356
-                                </li>
-                        <li>
-                            <span>Email:</span>
-                            <a href="mailto:sandy@treetopins.com" title="Tree Top Insurance - Email Address">
-                                sandy@treetopins.com
-                            </a>
-                        </li>
-                        <li>
-                                    <span>Phone:</span>
-                                <a href="tel:612-875-1382" title="Tree Top Insurance - Phone Number">
-                                    612-875-1382
-                                </a>
-                        </li>
-                    </ul>
-                </div>
+              <div className="footer-col">
+                <h5>Contact Info</h5>
+                <ul>
+                  <li>
+                    <h6>Location:</h6>
+                    <p>1382 Maplewood Dr, Long Lake, Minnesota 55356</p>
+                  </li>
+                  <li>
+                    <h6>Email:</h6>
+                    <a href="mailto:sandy@treetopins.com" title="Tree Top Insurance - Email Address">
+                        sandy@treetopins.com
+                    </a>
+                  </li>
+                  <li>
+                    <h6>Phone:</h6>
+                    <a href="tel:612-875-1382" title="Tree Top Insurance - Phone Number">
+                        612-875-1382
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </div>
       </footer>
