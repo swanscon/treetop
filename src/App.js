@@ -24,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="App-wrap">
         <header className="App-header">
           <img src={Logo} className="header-logo"/>
           <nav className="navbar navbar-expand-lg navbar-light">
@@ -63,6 +64,8 @@ function App() {
             </div>
           </nav>
         </header>
+        
+        </div>
       </div>
 
       <Routes>
@@ -74,6 +77,99 @@ function App() {
         <Route path="/events" element={<Events/>} />
         <Route path="/contact" element={<Contact/>} />     
       </Routes>
+      
+      <footer className="App-footer">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <div class="logo">
+                <h3>Tree Top Insurance</h3>
+                  <p>
+                      As a full service Insurance Provider, Tree Top Insurance provides the insurance products you need. From standard home, health and auto insurance to business, health and long term care insurance, we offer a range of solutions for you at any stage of life.
+                  </p>
+              </div>
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/1175641719286949" target="_blank" title="Tree Top Insurance - Facebook Page">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="single-footer-widget">
+                <h3>Quick Links</h3>
+                <ul class="footer-quick-links">
+                  <li>
+                    <a href="/" title="Tree Top Insurance - Personal, Business, Health and Medicare Coverage in Minnesota and Wisconsin">
+                        Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/our-agency" title="Tree Top Insurance - About Us">
+                        About Us
+                    </a>
+                  </li>
+                    <li>
+                      <a href="/insurance/personal-insurance" title="Tree Top Insurance - Personal Insurance in Medina, MN">
+                          Personal
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/insurance/business-insurance" title="Tree Top Insurance - Business Insurance in Medina, MN">
+                          Business
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/insurance/medicare" title="Tree Top Insurance - Senior and Medicare Coverage in Minnesota and Wisconsin">
+                          Seniors
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/resources/scope/medicare-meeting/" title="Scope of Appointment Form">
+                          Scope of Appointment Form
+                      </a>
+                    </li>
+                  <li>                                    
+                        <a href="/quote" title="Tree Top Insurance - Get A Quote">
+                            Get A Quote
+                        </a>                                   
+                  </li>
+                      <li>
+                        <a href="/contact" title="Tree Top Insurance - Contact Us">
+                            Contact Us
+                        </a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-sm-3 offset-md-3">
+                <div class="single-footer-widget">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact-info">
+                                <li>
+                                    <span>Location:</span>
+                                    1382 Maplewood Dr, Long Lake, Minnesota 55356
+                                </li>
+                        <li>
+                            <span>Email:</span>
+                            <a href="mailto:sandy@treetopins.com" title="Tree Top Insurance - Email Address">
+                                sandy@treetopins.com
+                            </a>
+                        </li>
+                        <li>
+                                    <span>Phone:</span>
+                                <a href="tel:612-875-1382" title="Tree Top Insurance - Phone Number">
+                                    612-875-1382
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+
     </Router>
   );
 }

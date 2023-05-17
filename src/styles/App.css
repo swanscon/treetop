@@ -14,3 +14,31 @@
   width: 100%;
   top: 0;
 }
+
+.App-footer {
+  background-color: #afafaf;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(2, 2, 2);
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.App-footer p {
+  font-size: 1rem;
+}
+
+.App-footer a {
+  font-size: 1rem;
+}
+
+
+
+.App-wrap {
+  padding-bottom: 2.5rem;
+}
